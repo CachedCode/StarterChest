@@ -1,0 +1,5 @@
+name: StarterChest
+version: 1.0.0
+main: net.kryptonox.starterchest.StarterChest
+description: Starting chest for starting players.
+author: DevHub [Kryptonox Code Team]
