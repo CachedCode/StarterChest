@@ -37,7 +37,6 @@ public class StartingChest {
 		Block b = playerLocation.getBlock();
 		
 		b.setType(Material.CHEST);
-		if(b instanceof Chest) {
 			Chest c = (Chest) b.getState();
 			Inventory i = c.getInventory();
 			
@@ -52,13 +51,6 @@ public class StartingChest {
 				i.setItem(0, new ItemStack(Material.AIR));
 				return;
 			}
-		} else {
-			/*
-			 * You could probably set it to the material of a chest and check again
-			 * but won't go that far.
-			 */
-			return;
-		}
 	}
 	
 	public static void addItem(ItemStack itemStack) {
